@@ -6,10 +6,14 @@ $.widget( "custom.page", {
         // creación de header
         elementPage.append("<div class='col-sm-12 page-header'>"+
                                 "<div class='row pt-2 pb-2'>"+
-                                    "<div class='col-sm-9'>Fecha: "+getCurrentDate()+"</div>"+
-                                    "<div class='col-sm-3'>"+
-                                        "<button type='button' class='btn btn-danger' id='btnRemoveElements'>Remove Elements</button>"+
-                                    "</div>"+
+                                    "<div class='col-sm-6'>Fecha: "+getCurrentDate()+"</div>"+
+                                    "<div class='col-sm-6'><table><tr>"+    
+                                        "<td>  <button type='button' class='btn btn-info' id='btnGenerate'>Generate HTML</button></td>"+
+
+                                        "<td>  <button type='button' class='btn btn-success' id='btnMovil'>Movil</button></td>"+
+                                        "<td><button type='button' class='btn btn-danger' id='btnRemoveElements'>Clear Elements</button></td>"+
+                                        
+                                    "</tr></table></div>"+
                                 "</div>"+
                            "</div>");
 
